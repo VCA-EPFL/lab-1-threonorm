@@ -1,3 +1,4 @@
+
 import Vector::*;
 import BRAM::*;
 
@@ -9,6 +10,7 @@ interface VD;
     method Action start(Bit#(8) dim_in, Bit#(2) i);
     method ActionValue#(Bit#(32)) response();
 endinterface
+
 
 (* synthesize *)
 module mkVectorDot (VD);
@@ -41,8 +43,9 @@ module mkVectorDot (VD);
                             responseOnWrite: False,
                             address: zeroExtend(pos_a),
                             datain: ?});
+        $display("addr_a ",pos_a,"");
 
-        if (pos_a < dim*zeroExtend(i))
+        if (pos_a < dim*zeroExtend(i+1)-1)
             pos_a <= pos_a + 1;
         else done_a <= True;
 
@@ -56,9 +59,10 @@ module mkVectorDot (VD);
                 address: zeroExtend(pos_b),
                 datain: ?});
 
-        if (pos_b < dim*zeroExtend(i))
+        if (pos_b < dim*zeroExtend(i+1)-1)
             pos_b <= pos_b + 1;
         else done_b <= True;
+        $display("addr_b ",pos_b,"");
     
         req_b_ready <= True;
     endrule
@@ -67,12 +71,14 @@ module mkVectorDot (VD);
         let out_a <- a.portA.response.get();
         let out_b <- b.portA.response.get();
 
-        output_res <=  out_a*out_b;     
+        output_res <=  output_res + out_a*out_b;     
         pos_out <= pos_out + 1;
         
         if (pos_out == dim-1) begin
             done_all <= True;
         end
+
+        $display("addr_out ",pos_out," ",out_a," ",out_b, " ", output_res, " ", out_a*out_b , pos_a, pos_b);
 
 
         req_a_ready <= False;
@@ -85,18 +91,19 @@ module mkVectorDot (VD);
         ready_start <= True;
         dim <= dim_in;
         done_all <= False;
-        pos_a <= dim_in*zeroExtend(i);
-        pos_b <= dim_in*zeroExtend(i);
+        pos_a <= dim_in*zeroExtend(i_in);
+        pos_b <= dim_in*zeroExtend(i_in);
         done_a <= False;
         done_b <= False;
+        output_res <= 0;
         pos_out <= 0;
         i <= i_in;
     endmethod
 
     method ActionValue#(Bit#(32)) response() if (done_all);
+        ready_start <= False;
         return output_res;
     endmethod
 
 endmodule
-
 

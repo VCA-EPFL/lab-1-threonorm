@@ -1,0 +1,211 @@
+Test passed
+Test passed
+Left barrel shifter test passed
+Warning: file 'v1.hex' for memory 'a_memory' has a gap at addresses 64 to 255.
+Warning: file 'v2.hex' for memory 'b_memory' has a gap at addresses 64 to 255.
+STARTING TEST FOR VECTOR DOT PRODUCT DIM 16... index 0
+addr_a   0
+addr_b   0
+addr_out   0          5          1          0          5  1  1
+addr_a   1
+addr_b   1
+addr_out   1          6          2          5         12  2  2
+addr_a   2
+addr_b   2
+addr_out   2          7          5         17         35  3  3
+addr_a   3
+addr_b   3
+addr_out   3          1          7         52          7  4  4
+addr_a   4
+addr_b   4
+addr_out   4          2          8         59         16  5  5
+addr_a   5
+addr_b   5
+addr_out   5          4          5         75         20  6  6
+addr_a   6
+addr_b   6
+addr_out   6          6          7         95         42  7  7
+addr_a   7
+addr_b   7
+addr_out   7          5          8        137         40  8  8
+addr_a   8
+addr_b   8
+addr_out   8          5          1        177          5  9  9
+addr_a   9
+addr_b   9
+addr_out   9          6          2        182         12 10 10
+addr_a  10
+addr_b  10
+addr_out  10          7          5        194         35 11 11
+addr_a  11
+addr_b  11
+addr_out  11          9          7        229         63 12 12
+addr_a  12
+addr_b  12
+addr_out  12          2          8        292         16 13 13
+addr_a  13
+addr_b  13
+addr_out  13          4          5        308         20 14 14
+addr_a  14
+addr_b  14
+addr_out  14          6          7        328         42 15 15
+addr_a  15
+addr_b  15
+addr_out  15          5          8        370         40 15 15
+GOT        410
+Test 0 passed
+STARTING TEST FOR VECTOR DOT PRODUCT DIM 16... index 1
+addr_a  16
+addr_b  16
+addr_out   0          5          1          0          5 17 17
+addr_a  17
+addr_b  17
+addr_out   1          6          2          5         12 18 18
+addr_a  18
+addr_b  18
+addr_out   2          7          5         17         35 19 19
+addr_a  19
+addr_b  19
+addr_out   3          1          7         52          7 20 20
+addr_a  20
+addr_b  20
+addr_out   4          2          8         59         16 21 21
+addr_a  21
+addr_b  21
+addr_out   5          4          5         75         20 22 22
+addr_a  22
+addr_b  22
+addr_out   6          6          7         95         42 23 23
+addr_a  23
+addr_b  23
+addr_out   7          5          8        137         40 24 24
+addr_a  24
+addr_b  24
+addr_out   8          5          1        177          5 25 25
+addr_a  25
+addr_b  25
+addr_out   9          6          2        182         12 26 26
+addr_a  26
+addr_b  26
+addr_out  10          7          5        194         35 27 27
+addr_a  27
+addr_b  27
+addr_out  11          1          7        229          7 28 28
+addr_a  28
+addr_b  28
+addr_out  12          2          8        236         16 29 29
+addr_a  29
+addr_b  29
+addr_out  13          4          5        252         20 30 30
+addr_a  30
+addr_b  30
+addr_out  14          6          7        272         42 31 31
+addr_a  31
+addr_b  31
+addr_out  15          5          8        314         40 31 31
+GOT        354
+Test 1 passed
+STARTING TEST FOR VECTOR DOT PRODUCT DIM 16... index 2
+addr_a  32
+addr_b  32
+addr_out   0          5          1          0          5 33 33
+addr_a  33
+addr_b  33
+addr_out   1          6          2          5         12 34 34
+addr_a  34
+addr_b  34
+addr_out   2          7          5         17         35 35 35
+addr_a  35
+addr_b  35
+addr_out   3          1          7         52          7 36 36
+addr_a  36
+addr_b  36
+addr_out   4          2          8         59         16 37 37
+addr_a  37
+addr_b  37
+addr_out   5          4          5         75         20 38 38
+addr_a  38
+addr_b  38
+addr_out   6          6          7         95         42 39 39
+addr_a  39
+addr_b  39
+addr_out   7          5          8        137         40 40 40
+addr_a  40
+addr_b  40
+addr_out   8         37          1        177         37 41 41
+addr_a  41
+addr_b  41
+addr_out   9          6          2        214         12 42 42
+addr_a  42
+addr_b  42
+addr_out  10          7          5        226         35 43 43
+addr_a  43
+addr_b  43
+addr_out  11          1        145        261        145 44 44
+addr_a  44
+addr_b  44
+addr_out  12          2          8        406         16 45 45
+addr_a  45
+addr_b  45
+addr_out  13          4          5        422         20 46 46
+addr_a  46
+addr_b  46
+addr_out  14          6          7        442         42 47 47
+addr_a  47
+addr_b  47
+addr_out  15          5          8        484         40 47 47
+GOT        524
+Test 2 passed
+STARTING TEST FOR VECTOR DOT PRODUCT DIM 16... index 3
+addr_a  48
+addr_b  48
+addr_out   0          5          1          0          5 49 49
+addr_a  49
+addr_b  49
+addr_out   1          6          2          5         12 50 50
+addr_a  50
+addr_b  50
+addr_out   2          7          5         17         35 51 51
+addr_a  51
+addr_b  51
+addr_out   3          1          7         52          7 52 52
+addr_a  52
+addr_b  52
+addr_out   4          2          8         59         16 53 53
+addr_a  53
+addr_b  53
+addr_out   5          4          5         75         20 54 54
+addr_a  54
+addr_b  54
+addr_out   6          6          7         95         42 55 55
+addr_a  55
+addr_b  55
+addr_out   7          5          8        137         40 56 56
+addr_a  56
+addr_b  56
+addr_out   8          5          1        177          5 57 57
+addr_a  57
+addr_b  57
+addr_out   9          6          2        182         12 58 58
+addr_a  58
+addr_b  58
+addr_out  10          7          5        194         35 59 59
+addr_a  59
+addr_b  59
+addr_out  11          9          7        229         63 60 60
+addr_a  60
+addr_b  60
+addr_out  12          2          8        292         16 61 61
+addr_a  61
+addr_b  61
+addr_out  13          4          5        308         20 62 62
+addr_a  62
+addr_b  62
+addr_out  14          6          7        328         42 63 63
+addr_a  63
+addr_b  63
+addr_out  15          5          8        370         40 64 64
+addr_a  64
+addr_b  64
+GOT        410
+Test 3 passed
