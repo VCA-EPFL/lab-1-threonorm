@@ -8,11 +8,12 @@ typedef enum {
 function Bit#(32) alu (InstructionType ins, Bit#(32) v1, Bit#(32) v2);
 	Bit#(32) res = 0;
 	case (ins) matches
-	Add: return v1 + v2; 
-	ShiftL : return v1 << v2; 
-	And : return v1 & v2; 
-	Not : return ~v1;
+	Add: res = v1 + v2; 
+	ShiftL : res =v1 << v2; 
+	And : res = v1 & v2; 
+	Not : res = ~v1;
 	endcase
+	return res;
     
 endfunction
 
