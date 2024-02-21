@@ -31,11 +31,31 @@
       "points": null
     },
     {
-      "name": "Debugging",
+      "name": "Debugging 1",
       "setup": "",
       "run": "cat output4.log",
       "input": "",
-      "output": "Test 1 passed\r\nTest 2 passed\r\nTest 3 passed\r\n",
+      "output": "Test 1 passed",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Debugging 2 ",
+      "setup": "",
+      "run": "cat output4.log",
+      "input": "",
+      "output": "Test 2 passed",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "Debugging 3",
+      "setup": "",
+      "run": "cat output4.log",
+      "input": "",
+      "output": "Test 3 passed",
       "comparison": "included",
       "timeout": 10,
       "points": null
